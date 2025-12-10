@@ -6,8 +6,6 @@
 - 以三層式架構（Controller, Service, Repository）設計，便於維護和擴充。
 - 前端 React 介面為課程提供，僅用於展示 API 回傳結果。
 
----
-
 ## 技術堆疊
 
 ### Backend
@@ -23,8 +21,6 @@
 - Postman
 - Git / GitHub
 
----
-
 ## 功能特色
 
 ### 1. RESTful API（CRUD）
@@ -39,29 +35,21 @@
 | PUT    | `/products/{id}` | 更新產品     |
 | DELETE | `/products/{id}` | 刪除產品     |
 
----
-
 ### 2. 三層式架構（Controller / Service / Repository）
 
 - **Controller**：提供 API 端點
 - **Service**：封裝商業邏輯
 - **Repository**：繼承 JpaRepository，自動完成資料庫 CRUD
 
----
-
 ### 3. Spring Data JPA 自動化資料模型
 
 - `ProductRepo` 使用 JpaRepository<Product, Long>
 - 不用自行撰寫 SQL，即可完成查詢、新增、更新、刪除
 
----
-
 ### 4. H2 Database
 
 - Spring Boot 內建資料庫
 - 可使用 `/h2-console` 查看資料表內容
-
----
 
 ## 截圖
 
